@@ -1,9 +1,9 @@
 
-import { CatchAsyncError } from "../middleware/CatchAsyncError.js"
+import catchAsyncError from "../middleware/CatchAsyncError.js"
 
 
 // Register controllers
-export const RegisterController = CatchAsyncError((req,res,next)=>{
+export const RegisterController = catchAsyncError(async(req,res,next)=>{
     // const {username,email,password} = req.body;
     // res.json({
     //     success: true,
@@ -22,7 +22,7 @@ export const RegisterController = CatchAsyncError((req,res,next)=>{
 //         login:"loveing"
 //     })
 // })
-export const LoginController =(req,res,next)=>{
+export const LoginController =async(req,res,next)=>{
 
     res.json({
         login:"loveing"
