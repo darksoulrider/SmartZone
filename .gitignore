@@ -5,7 +5,7 @@
 /backend/node_modules
 /backend/config/.env
 # backend igonres...
-/frontend/node_modules
+/frontend-vite/node_modules
 
 notex.txt
 

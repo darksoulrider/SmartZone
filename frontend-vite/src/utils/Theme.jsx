@@ -5,11 +5,14 @@ export const darkTheme = {
     secondar:"",
     button:"",
     bgColor:"",
+    bgNav:"",
     
 
 }
 export const lightTheme = {
-
-
-
+    primary:"",
+    secondar:"",
+    button:"",
+    bgColor:"",
+    bgNav:"",
 }

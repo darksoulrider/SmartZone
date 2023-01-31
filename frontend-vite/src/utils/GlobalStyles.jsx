@@ -8,24 +8,25 @@ export const screenSize = {
     extraLarge:"1920px",
 
 }
-export const gloablStyle = createGlobalStyle`
+const GlobalStyle = createGlobalStyle`
 
     *{
         margin: 0;
         padding: 0;
         box-sizing: "border-box";
-        background-color: blue;
     }
     body{
         font-family: 'Roboto', sans-serif;
-
+        width: 100vw;
+        height: 100vh;
+        background-color: black;
     }
     html{
         font-size: 62.5%;
-
-        @media (${window.innerWidth}>1800px)  {
+        
+        /* @media ()  {
             font-size: 55%;
-        }
+        } */
     }
 
 
@@ -33,3 +34,5 @@ export const gloablStyle = createGlobalStyle`
 
 
 ` // end of file
+
+export default GlobalStyle;

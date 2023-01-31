@@ -14,6 +14,7 @@ const sendToken = async(res,user,message,statuscode=200)=> {
         success: true,
         message:message,
         user,
+        token,
     })
 }
 
