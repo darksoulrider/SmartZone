@@ -19,7 +19,11 @@ app.use(express.urlencoded({ limit:"30mb",extended:true}))
 app.use(helmet())
 app.use(helmet.crossOriginResourcePolicy({policy:"cross-origin"}))
 app.use(morgan("dev"))
-app.use(cors())
+app.use(cors({
+    origin: "http://localhost:3000",
+    credentials:true,
+    methods:["GET", "POST", "PUT", "DELETE"],
+}))
 app.use("/assets",express.static(path.join(__dirname, "public/assets")))
 
 
