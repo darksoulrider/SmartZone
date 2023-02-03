@@ -25,4 +25,5 @@ const Container = styled.div`
     overflow-x: hidden;
     position: fixed;  // we can cooment this also add scroll functinolity
     top: 8rem;
+    
 `

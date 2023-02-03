@@ -28,7 +28,7 @@ export default LeftPanel;
 const Left = styled.div`
     flex: 3;
     height: 100vh;    
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
     ::-webkit-scrollbar{
         display: none;
     } 
@@ -42,8 +42,8 @@ const Left = styled.div`
         gap:2rem;
         margin: 1.5rem;
         img{
-            width:8.2rem;
-            height:8.2rem;
+            width:4.2rem;
+            height:4.2rem;
             border-radius:50%;
             object-fit: contain;
             cursor: pointer;
@@ -52,7 +52,7 @@ const Left = styled.div`
             }
         }
         p{
-            font-size: 3rem;
+            font-size: 1.5rem;
             letter-spacing: 0.1rem;
             text-transform: uppercase;
             font-weight: 500;
@@ -75,7 +75,7 @@ const Left = styled.div`
         /* border: 1px solid red; */
         height: 100rem;
         p{
-            font-size: 2.3rem;
+            font-size: 2rem;
             /* border: 1px solid red; */
             width: 80%;
             padding: 0.5rem 0;

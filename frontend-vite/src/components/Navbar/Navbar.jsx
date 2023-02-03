@@ -37,7 +37,7 @@ const Container = styled.nav`
     align-items: center;
     position: fixed;
     top:0;
-    
+    z-index: 100;
     filter: drop-shadow(0.1rem 0.11rem 0.1rem black);
     .logo{
         font-size: 2rem;

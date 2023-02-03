@@ -65,6 +65,7 @@ export default UploadPost;
 const  Container = styled.div`
     margin:1rem;
     /* border: 1px solid  black; */
+    background-color: white;
     border-radius: 1rem;
     box-shadow: -17px 8px 37px 0px rgba(0,0,0,0.1);
     .wrapper{

@@ -9,6 +9,8 @@ const MainPanel = ()=>{
         <Main>
             <UploadPost/>
             <PostCard/>
+            <PostCard/>
+            <PostCard/>
         </Main>
     );
 }
@@ -19,6 +21,7 @@ const Main = styled.div`
     height: 100vh;
     background-color: #3d1313;
     background-color: #ececec;
+    background-color: gray;
     color: #170404;
     overflow-y: auto;
     ::-webkit-scrollbar{
