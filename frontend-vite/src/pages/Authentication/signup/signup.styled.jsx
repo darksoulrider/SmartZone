@@ -14,13 +14,18 @@ background-color: rgb(196, 195, 157);
 `
 export const Form = styled.form`
 margin:1rem;
+margin-top: -3rem;
 min-width: 34rem;
 min-height: 55rem;
 color:black;
 background-color: #c7ceb5;
 border-radius: 1rem;
 filter: drop-shadow(0.1rem 0.1rem 1.2rem gray);
-
+@media (min-width: 800px) {
+    display: flex;
+    flex-direction:row;
+    min-width: 70rem;
+}
 `
 
 export const Left = styled.div`
@@ -106,10 +111,26 @@ button{
         color: white;
     }
 }
+@media (min-width: 800px) {
+    min-width: 50%;
+    .error{
+    margin-right:auto;
+    margin-left: 3.1rem;
+    font-size: 1.35rem;
+    margin-top: 0.5rem;
+    color:red;
+    }
+}
+
 
 `   
 
 export const Right = styled.div`
-border: 1px solid black;
-display: none;
+    border: 1px solid black;
+    min-width: 50%;
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(6,6,4,1) 100%);
+    clip-path: polygon(100% 0, 0 100%, 100% 100%);
+    @media (max-width: 800px) {        
+        display: none;
+    }
 `

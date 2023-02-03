@@ -21,11 +21,13 @@ const GlobalStyle = createGlobalStyle`
         font-family: 'Roboto', sans-serif;
         max-width: 100%;
         max-height: 100%;
-        overflow-x: hidden;
+        /* overflow-x: hidden; */
+    
+        
     }
     html{
         font-size: 62.5%;
-        overflow-x: hidden;
+        
         
     }
 

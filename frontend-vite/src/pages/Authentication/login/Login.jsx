@@ -5,7 +5,7 @@ import {LoginValidationSchema} from "../../../utils/yupValidation"
 import {useForm} from "react-hook-form"
 import { useDispatch } from 'react-redux';
 import { loginReq } from '../../../redux/apicall/userApi';
-import { useNavigate } from 'react-router-dom';
+import { Navigate, useNavigate } from 'react-router-dom';
 
 const Login = ()=>{
     const dispatch = useDispatch();
@@ -26,7 +26,7 @@ const Login = ()=>{
                 <input 
                     type="text" 
                     autoCorrect='false' 
-                    placeholder='Username..'
+                    placeholder='Enter your username'
                     {...register("username")}
                 />
                 {(errors.username && <p className="error">{errors.username.message}</p>)}
@@ -34,11 +34,11 @@ const Login = ()=>{
                     type="password" 
                     autoCorrect='false' 
                     autoComplete='off'
-                    placeholder='Password..'
+                    placeholder='Enter your  password' 
                     {...register("password")}
                 />
                 {(errors.password && <p className="error">{errors.password.message}</p>)}
-                <button type='submit'>Login</button>
+                <button type='submit' >Login</button>
                 <div className="infos">
                     <p className='one'>Don't have an accont?
                     <span onClick={()=>nevigate("/signup")}>Register</span>
